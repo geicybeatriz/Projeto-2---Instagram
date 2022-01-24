@@ -5,6 +5,9 @@ body{
     height: 2000px;*/
     background: #fafafa;
 }
+.barra-topo-celular{
+    display: none;
+}
 .barra-topo-pagina {
     width: 100%;
     height: 54px;
@@ -57,12 +60,17 @@ body{
 .topo-direita ion-icon{
     margin-right: 24px;
 }
+.conteudo{
+    width: 614px;
+    margin-left: 215px;
+    display: flex;
+    flex-direction: column;
+
+}
 .barra-stories {
-    position: absolute;
     width: 614px;
     height: 118px;
-    left: 215px;
-    top: 88px;
+    margin-top: 88px;
 
     background: #FFFFFF;
     border: 1px solid #DBDBDB;
@@ -72,9 +80,10 @@ body{
     display: flex;
     align-items: center;
     overflow: hidden;
+    position:relative;
+
 }
 .stories {
-    position:relative;
     width: 66px;
     height: 66px;
     border-radius: 33px;
@@ -125,10 +134,7 @@ body{
 
 /*coluna de posts*/
 .coluna-de-posts {
-    position: absolute;
-    top: 230px;
-    left: 215px;
-
+    margin-top:24px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -172,7 +178,7 @@ body{
 .topo-post {
     width: 614px;
     height: 60px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #efefef;
 
     display: flex;
     flex-direction: row;
@@ -357,6 +363,80 @@ body{
     margin-top: 18px;
 }
 
+.barra-inferior-celular{
+    display: none;
+}
+
+@media (max-width: 935px){
+    .barra-topo-celular{
+        display: none;
+    }
+    .barra-lateral{
+        display: none;
+    }
+    
+    .conteudo{
+        margin-left: 0;
+        align-items: center;
+    }
+    .barra-inferior-celular{
+        display: none;
+    }
+}
+@media (max-width:614px) {
+    .barra-topo-pagina, .seta-stories, .seta-stories ion-icon{
+        display: none;
+    }
+    .barra-topo-celular{
+        width: 100vw;
+        height: 54px;
+
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding: 0px 20px; */
+        position: fixed;
+        top: 0;
+        left:0;
+        z-index: 2;
+        background: #FFFFFF;
+        border: 1px solid #DBDBDB;
+    }
+    .conteudo{
+        width: 100vw;
+    }
+    .barra-stories{
+        overflow: hidden;
+        border-right: none;
+        width: 100vw;
+        background-color: #fafafa;
+        margin: 54px 0 0 0;
+    }
+    .coluna-de-posts{
+        width: 100vw; 
+
+    }
+    .topo-post, .postagem{
+        width: 100vw;
+    }
+    .midia img, .midia video{
+        width: 100vw;
+        height: 100vw;
+    }
+
+    .barra-inferior-celular{
+        width: 100vw;
+        height: 54px;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+    }
+}
 
 
 
