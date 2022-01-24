@@ -4,33 +4,306 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="reset.css">
+
+    <link rel="stylesheet" href="estilos.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
     
     <title>Geicy B S Cardoso - Projeto 2: Instagram</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="estilos.css">
 
 </head>
+
 <body>
+    <!--barra do topo da página fixa-->
     <div class="barra-topo-pagina">
-        <ion-icon name="logo-instagram"></ion-icon>
-        <div class="divisoria"></div>
-        <img src="imagens/logo-instagram.png">
-        <div class="pesquisar">Pesquisar</div>
-        <ion-icon name="paper-plane-outline"></ion-icon>
-        <ion-icon name="compass-outline"></ion-icon>
-        <ion-icon name="heart-outline"></ion-icon>
-        <ion-icon name="person-outline"></ion-icon>
+        <div class="topo-esquerda">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <div class="divisoria"></div>
+            <img src="imagens/logo.png" class="logo-insta">
+        </div>
+
+        <div class="pesquisar">
+            <p>Pesquisar</p>
+        </div>
+        
+        <div class="topo-direita">
+            <ion-icon name="paper-plane-outline"></ion-icon>
+            <ion-icon name="compass-outline"></ion-icon>
+            <ion-icon name="heart-outline"></ion-icon>
+            <ion-icon name="person-outline"></ion-icon>
+        </div>
+    </div>
+    <!--caixa de stories-->
+    <div class="barra-stories">
+        <div class="caixa-stories">
+            <div class="stories">
+                <img src="imagens/ghost.jpg" class="story">
+            </div>
+            <p>Little light</p>
+        </div>
+
+        <div class="caixa-stories">
+            <div class="stories">
+                <img src="imagens/Zavala.jpg" class="story">
+            </div>
+            <p>Zavala</p>
+        </div>
+
+        <div class="caixa-stories">
+            <div class="stories">
+                <img src="imagens/IkoraRey.jpg" class="story">
+            </div>
+            <p>Ikora Rey</p>
+        </div>
+
+        <div class="caixa-stories">
+            <div class="stories">
+                <img src="imagens/Cayde6.jpeg" class="story">
+            </div>
+            <p>Cayde-6</p>
+        </div>
+
+        <div class="caixa-stories">
+            <div class="stories">
+                <img src="imagens/Eris.jpg" class="story">
+            </div>
+            <p>Eris</p>
+        </div>
+
+        <div class="caixa-stories">
+            <div class="stories">
+                <img src="imagens/Shaxx.png" class="story">
+            </div>
+            <p>Shaxx</p>
+        </div>
+
+        <div class="caixa-stories">
+            <div class="stories">
+                <img src="imagens/casal.jpeg" class="story">
+            </div>
+            <p>Saint 14</p>
+        </div>
+        <div class="caixa-stories">
+            <div class="stories">
+                <img src="imagens/casal.jpeg" class="story">
+            </div>
+            <p>Osíris</p>
+        </div>
+        
+        <div class="seta-stories">
+           <ion-icon name="chevron-forward-circle"></ion-icon>
+        </div>
+        
     </div>
 
+    <!--coluna de posts:-->
+    <div class="coluna-de-posts">
+        <div class="postagem">
+            <div class="topo-post">
+                <div class="perfil">
+                    <img src="imagens/ghost.jpg" alt="">
+                    <p>Little light</p>
+                </div>
+                <ion-icon name="ellipsis-horizontal"></ion-icon>
+            </div>
+            <div class="midia">
+                <video width="100%" autoplay muted>
+                    <source src="imagens/video.mp4" type="video/mp4" />
+                    <source src="imagens/video.ogv" type="video/ogv" />
+                    Seu navegador não suporta vídeos.
+                </video>
+            </div>
+            <div class="interacao">
+                <ion-icon name="heart-outline"></ion-icon>
+                <ion-icon name="chatbubble-outline"></ion-icon>
+                <ion-icon name="paper-plane-outline"></ion-icon>
+            </div>
+
+            <div class="curtidas-info">
+                <img src="imagens/Shaxx.png" alt="">
+                <p>Curtido por Shaxx e outras 4.567 pessoas</p>
+            </div>
+
+            <!--<div class="comentarios">
+                <div class="comentario">
+                    <p class="seguidor">Derivante</p>
+                    <p> o melhor restaurante da torre, sem dúvida!!!</p>
+                </div>
+            </div>-->
+        </div>
+        <div class="postagem">
+            <div class="topo-post">
+                <div class="perfil">
+                    <img src="imagens/IkoraRey.jpg" alt="">
+                    <p>Ikora Rey</p>
+                </div>
+                <ion-icon name="ellipsis-horizontal"></ion-icon>
+            </div>
+            <div class="midia">
+                <img src="imagens/postagem2.jpg" alt="">
+            </div>
+            <div class="interacao">
+                <ion-icon name="heart-outline"></ion-icon>
+                <ion-icon name="chatbubble-outline"></ion-icon>
+                <ion-icon name="paper-plane-outline"></ion-icon>
+            </div>
+
+            <div class="curtidas-info">
+                <img src="imagens/ghost.jpg" alt="">
+                <p>Curtido por Little light e outras 84.875 pessoas</p>
+            </div>
+        </div>
+        <div class="postagem">
+            <div class="topo-post">
+                <div class="perfil">
+                    <img src="imagens/Cayde6.jpeg" alt="">
+                    <p>Cayde-6</p>
+                </div>
+                <ion-icon name="ellipsis-horizontal"></ion-icon>
+            </div>
+            <div class="midia">
+                <img src="imagens/postagem1.jpeg" alt="">
+            </div>
+            <div class="interacao">
+                <ion-icon name="heart-outline"></ion-icon>
+                <ion-icon name="chatbubble-outline"></ion-icon>
+                <ion-icon name="paper-plane-outline"></ion-icon>
+            </div>
+
+            <div class="curtidas-info">
+                <img src="imagens/ghost.jpg" alt="">
+                <p>Curtido por Little light e outras 4.875 pessoas</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="barra-lateral">
+        <div class="usuario">
+            <div class="story">
+                <img src="imagens/ghost.jpg" alt="" >
+            </div>
+            <div class="username">
+                <p class="nome-principal">Little Light</p>
+                <p class="nome-real">Fantasma</p>
+            </div>
+        </div>
+        <div class="divisa-sidebar"></div>
+
+        <div class="sugestao">
+            <p class="sugestoes">Sugestões para você</p>
+            <p class="ver-tudo">Ver tudo</p>
+        </div>
+
+        <div class="perfis-sugeridos">
+            <div class="candidatos">
+                <div class="perfil-candidato">
+                    <div class="foto-perfil">
+                        <img src="imagens/ghost.jpg" alt="" >
+                    </div>
+                    <div class="username">
+                        <p class="nome-principal">Little Light</p>
+                        <p class="seguidor">Segue você</p>
+                    </div>
+                </div>
+                <div class="seguir">
+                    <p class="texto-azul">Seguir</p>
+                </div>
+            </div>
+            <div class="candidatos">
+                <div class="perfil-candidato">
+                    <div class="foto-perfil">
+                        <img src="imagens/ghost.jpg" alt="" >
+                    </div>
+                    <div class="username">
+                        <p class="nome-principal">Little Light</p>
+                        <p class="seguidor">Segue você</p>
+                    </div>
+                </div>
+                <div class="seguir">
+                    <p class="texto-azul">Seguir</p>
+                </div>
+            </div>
+            <div class="candidatos">
+                <div class="perfil-candidato">
+                    <div class="foto-perfil">
+                        <img src="imagens/ghost.jpg" alt="" >
+                    </div>
+                    <div class="username">
+                        <p class="nome-principal">Little Light</p>
+                        <p class="seguidor">Segue você</p>
+                    </div>
+                </div>
+                <div class="seguir">
+                    <p class="texto-azul">Seguir</p>
+                </div>
+            </div>
+            <div class="candidatos">
+                <div class="perfil-candidato">
+                    <div class="foto-perfil">
+                        <img src="imagens/ghost.jpg" alt="" >
+                    </div>
+                    <div class="username">
+                        <p class="nome-principal">Little Light</p>
+                        <p class="seguidor">Segue você</p>
+                    </div>
+                </div>
+                <div class="seguir">
+                    <p class="texto-azul">Seguir</p>
+                </div>
+            </div>
+            <div class="candidatos">
+                <div class="perfil-candidato">
+                    <div class="foto-perfil">
+                        <img src="imagens/ghost.jpg" alt="" >
+                    </div>
+                    <div class="username">
+                        <p class="nome-principal">Little Light</p>
+                        <p class="seguidor">Segue você</p>
+                    </div>
+                </div>
+                <div class="seguir">
+                    <p class="texto-azul">Seguir</p>
+                </div>
+            </div>
+            <div class="candidatos">
+                <div class="perfil-candidato">
+                    <div class="foto-perfil">
+                        <img src="imagens/ghost.jpg" alt="" >
+                    </div>
+                    <div class="username">
+                        <p class="nome-principal">Little Light</p>
+                        <p class="seguidor">Segue você</p>
+                    </div>
+                </div>
+                <div class="seguir">
+                    <p class="texto-azul">Seguir</p>
+                </div>
+            </div>
+        </div>
+        <div class="rodape-sidebar">
+            <div class="sidebar-imprensa">
+                <p class="sobre">Sobre •</p>
+                <p class="sobre">Ajuda •</p>
+                <p class="sobre">Imprensa •</p>
+                <p class="sobre">API •</p>
+                <p class="sobre">Carreiras •</p>
+                <p class="sobre">Privacidade •</p>
+                <p class="sobre">Termos •</p>
+                <p class="sobre">Localizações •</p>
+                <p class="sobre">Contas mais relevantes •</p>
+                <p class="sobre">Hashtags •</p>
+                <p class="sobre">Idioma</p>
+            </div>
+            <div class="sobre copyright">© 2021 INSTAGRAM DO FACEBOOK</div>
+        </div>
 
 
-    <div class="barra-stories"></div>
-    <div class="barra-lateral"></div>
-    <div class="posts"></div>
+    </div>
+    
 
 
 
